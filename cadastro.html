@@ -11,7 +11,10 @@
         if (confirma.value === senha.value){
         confirma.setCustomValidity('');
         } else {
-         confirm.setCustomValidity('As senhas não são iguais!');
+         confirma.setCustomValidity('As senhas não são iguais!');
+        }
+        function formenviado(){
+            alert("Formulário enviado!")
         }
     }
     </script>
@@ -49,7 +52,7 @@
             </div>
             <br />
         </form>
-        <form name="cadastro" action="" method="post" accept-charset="UTF-8">
+        <form name="cadastro" action="" onsubmit="formenviado();" method="post" accept-charset="UTF-8">
             <div>
                 <b>Digite a senha: </b>
                 <input id="senha" type="password" name="senha" required onchange="validarSenha();"/>
