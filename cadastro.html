@@ -48,19 +48,20 @@
                 <br />
             </div>
             <br />
-
+        </form>
+        <form name="cadastro" action="" method="get" accept-charset="UTF-8">
             <div>
                 <b>Digite a senha: </b>
-                <input id="senha" type="password" name="senha" required />
+                <input id="senha" type="password" name="senha" required onchange="validarSenha()"/>
             </div>
 
             <div>
                 <b>Confirme a senha: </b>
-                <input id="csenha" type="password" name="csenha" required />
+                <input id="csenha" type="password" name="csenha" required onchange="validarSenha()" />
             </div>
 
             <br />
-            <button onchange="validarSenha()" type="button">Enviar</button>
+            <button type="button">Enviar</button>
         </form>
     </body>
 
