@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Formulario de Cadastro</title>
+    </head>
+
+    <script>
+        function validarSenha() {
+            senha = document.getElementById("senha").value;
+            csenha = document.getElementById("csenha").value;
+            if (senha != csenha) {
+                alert("SENHAS DIFERENTES");
+            } else {
+                document.Formulario.submit();
+            }
+        }
+    </script>
+
+    <body>
+        <h1>Cadastro de Dados</h1>
+        <a href="consulta.html">Consulta</a>
+
+        <form action="/" method="get" name="Formulario">
+            <div>
+                <b>Nome completo: </b>
+                <input name="Nome" type="text" required />
+            </div>
+            <div>
+                <b>Email:</b>
+                <input name="Email" type="email" required />
+            </div>
+            <div>
+                <b>Telefone:</b>
+                <input name="Telefone" type="tel" required />
+            </div>
+            <div>
+                <b>Data de nacimento:</b>
+                <input name="Nacimento" type="date" required />
+            </div>
+            <div>
+                <p><b>Genero:</b></p>
+                <input type="radio" name="genero" value="M" />Masculino
+                <br />
+                <input type="radio" name="genero" value="F" />Feminino
+                <br />
+                <input type="radio" name="genero" value="OUTRO" />Prefiro não
+                informar
+                <br />
+            </div>
+            <br />
+
+            <div>
+                <b>Digite a senha: </b>
+                <input id="senha" type="password" required />
+            </div>
+
+            <div>
+                <b>Confirme a senha: </b>
+                <input id="csenha" type="password" required />
+            </div>
+
+            <br />
+            <button onclick="validarSenha" type="button">Enviar</button>
+        </form>
+    </body>
+
+    <footer></footer>
+</html>
