@@ -4,7 +4,7 @@ function validarSenha() {
   if (confirma.value === senha.value){
   confirma.setCustomValidity('');
   } else {
-   confirma.setCustomValidity('As senhas não são iguais!');
+      alert("Senhas não condizem!")
   }
   function formenviado(){
       alert("Formulário enviado!")
