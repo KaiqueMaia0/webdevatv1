@@ -5,15 +5,15 @@
     </head>
 
     <script>
-        function validarSenha() {
-            senha = document.getElementById("senha").value;
-            csenha = document.getElementById("csenha").value;
-            if (senha != csenha) {
-                alert("SENHAS DIFERENTES");
-            } else {
-                document.Formulario.submit();
-            }
+    function validarSenha() {
+        const senha = document.querySelector(input[id=senha]);
+        const csenha = document.querySelector(input[id=csenha]);
+        if (confirma.value == senha.value){
+        confirma.setCustomValidity('');
+        } else {
+         confirm.setCustomValidity('As senhas não são iguais!');
         }
+    }
     </script>
 
     <body>
@@ -60,7 +60,7 @@
             </div>
 
             <br />
-            <button onclick="validarSenha" type="button">Enviar</button>
+            <button onchange="validarSenha()" type="button">Enviar</button>
         </form>
     </body>
 

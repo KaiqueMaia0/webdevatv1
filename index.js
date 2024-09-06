@@ -1,9 +1,9 @@
 function validarSenha() {
-  senha = document.getElementById("senha").value;
-  csenha = document.getElementById("csenha").value;
-  if (senha != csenha) {
-    alert("SENHAS DIFERENTES");
+  const senha = document.querySelector(input[id=senha]);
+  const csenha = document.querySelector(input[id=csenha]);
+  if (confirma.value == senha.value){
+    confirma.setCustomValidity('');
   } else {
-    document.Formulario.submit();
+    confirm.setCustomValidity('As senhas não são iguais!');
   }
 }
