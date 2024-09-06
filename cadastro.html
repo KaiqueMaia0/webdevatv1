@@ -2,21 +2,21 @@
 <html>
     <head>
         <title>Formulario de Cadastro</title>
-        <script src="cadastro.html"></script>
+        <script src="index.js"></script>
     </head>
 
     <script>
     function validarSenha() {
         const senha = document.querySelector(input[id=senha]);
         const csenha = document.querySelector(input[id=csenha]);
-        if (confirma.value === senha.value){
-        confirma.setCustomValidity('');
+        if (csenha.value === senha.value){
+        csenha.setCustomValidity('');
         } else {
             alert("Senhas não condizem!")
         }
-        function formenviado(){
-            alert("Formulário enviado!")
-        }
+    }
+    function formenviado(){
+        alert("Formulário enviado!")
     }
     </script>
 
@@ -39,7 +39,7 @@
             </div>
             <div>
                 <b>Data de nacimento:</b>
-                <input name="Nacimento" type="date" required />
+                <input name="Nascimento" type="date" required />
             </div>
             <div>
                 <p><b>Genero:</b></p>
@@ -65,7 +65,7 @@
             </div>
 
             <br />
-            <button type="button">Enviar</button>
+            <button type="submit">Enviar</button>
         </form>
     </body>
 
