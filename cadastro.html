@@ -8,7 +8,7 @@
     function validarSenha() {
         const senha = document.querySelector(input[id=senha]);
         const csenha = document.querySelector(input[id=csenha]);
-        if (confirma.value == senha.value){
+        if (confirma.value === senha.value){
         confirma.setCustomValidity('');
         } else {
          confirm.setCustomValidity('As senhas não são iguais!');
@@ -49,7 +49,7 @@
             </div>
             <br />
         </form>
-        <form name="cadastro" action="" method="get" accept-charset="UTF-8">
+        <form name="cadastro" action="" method="post" accept-charset="UTF-8">
             <div>
                 <b>Digite a senha: </b>
                 <input id="senha" type="password" name="senha" required onchange="validarSenha();"/>
