@@ -1,5 +1,8 @@
 # Projeto: Páginas Simples de Cadastro e Consulta
 
+## Integrantes 
+Kaique Maia Alves(KaiqueMaia0) e Marcos Vinicius Andrade(MarcosAndradeV)
+
 ## Descrição
 Este projeto consiste em:
 Uma página inicial (index.html), página para você escolher para qual destino/página deseja ir.
